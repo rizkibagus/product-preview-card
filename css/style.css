@@ -13,3 +13,123 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--primarycream);
+    color: var(--neutraldarkblue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.product {
+    max-width: 375px;
+    margin: 1.5rem 0;
+    border-radius: 10px;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product img.image-desktop {
+    display: none;
+}
+
+
+.product img.image-mobile {
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px 10px 0 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-position: center;
+
+}
+
+.product .product-description {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+}
+
+.product .product-description h1 {
+    font-size: 0.7rem;
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    
+}
+
+.product .product-description h2 {
+    font-family: 'Fraunces' , serif;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;   
+}
+
+.product .product-description p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: var(--neutralgrayishblue);
+}
+
+.product .product-description .price {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.product .product-description .price p.price-now {
+    font-family: 'Fraunces' , serif;
+    color: var(--primarydarkcyan);
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.product .product-description .price p.price-before{
+    text-decoration: line-through;
+    color: var(--neutralgrayishblue);
+}
+
+.product .product-description button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  background-color: var(--primarydarkcyan);
+  width: 100%;
+  color: var(--white);
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 1rem 0; 
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+}
+
+.product .product-description button:hover{
+    background-color: var(--neutraldarkblue);
+}
+
+
+/* Footer */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    font-weight: 600;
+  
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+  }
+
+
+  @media (min-width: 768px) {
+    
+  }
